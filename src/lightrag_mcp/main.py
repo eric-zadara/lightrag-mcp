@@ -33,7 +33,7 @@ def main():
         else:
             logger.warning("No API key provided")
 
-        mcp.run(transport="stdio")
+        mcp.run(transport="sse")
 
     except KeyboardInterrupt:
         logger.info("Server stopped by user")
